@@ -1,7 +1,7 @@
 const expect = chai.expect;
 
 describe('index.js', function () {
-  describe('scuberGreetingForFeet()', function () {
+  describe('scuberGreetingFokrFeet()', function () {
     it('gives customers a free sample if the ride is less than or equal to 400 feet', function () {
       expect(scuberGreetingForFeet(199)).to.equal('This one is on me!');
     });
