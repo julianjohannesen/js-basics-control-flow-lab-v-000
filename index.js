@@ -8,7 +8,7 @@
     }
   }
   function ternaryCheckCity(city){
-    (city == "NYC") ? "Ok, sounds good." : "No go.";
+    city === "NYC" ? "Ok, sounds good." : "No go.";
   }
   function switchOnCharmFromTip(tip){
     switch (tip) {
@@ -23,3 +23,11 @@
 console.log(scuberGreetingForFeet(500));
 console.log(ternaryCheckCity("NYC"));
 console.log(switchOnCharmFromTip("generous"));
+```
+returns "Ok, sounds good." when the city is NYC ‣
+AssertionError: expected undefined to equal 'Ok, sounds good.'
+    at Context.<anonymous> (test/indexTest.js:20:42)
+    should return "No go." if the destination city is not NYC ‣
+AssertionError: expected undefined to equal 'No go.'
+    at Context.<anonymous> (test/indexTest.js:24:49)
+```
